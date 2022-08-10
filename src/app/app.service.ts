@@ -9,7 +9,7 @@ export class AppService {
 
   constructor(public httpClient: HttpClient) { }
 
-  getEventsDigitals(idTypeEvent?: number) {
+  getEventsDigitals(idTypeEvent?: string) {
     let url;
     if (idTypeEvent) {
       url = `http://localhost:8080/eventos/buscar?origin=${idTypeEvent}`;

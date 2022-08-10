@@ -13,11 +13,11 @@ import { Observable, ReplaySubject } from 'rxjs';
 export class AppComponent implements OnInit {
   typeEventSelect = new FormControl('');
   typeEvents = [
-    { value: '1', viewValue: 'Consulta de información bursátil' },
-    { value: '2', viewValue: 'Emisión de título valor' },
-    { value: '3', viewValue: 'Generación de reportes operativos' },
-    { value: '4', viewValue: 'Custodia de título valor' },
-    { value: '5', viewValue: 'Complementación de operación' }
+    { value: 'F001', viewValue: 'Consulta de información bursátil' },
+    { value: 'F002', viewValue: 'Emisión de título valor' },
+    { value: 'F003', viewValue: 'Generación de reportes operativos' },
+    { value: 'F004', viewValue: 'Custodia de título valor' },
+    { value: 'F005', viewValue: 'Complementación de operación' }
   ];
 
   displayedColumns: string[] = ['event', 'date', 'count', 'cost'];
